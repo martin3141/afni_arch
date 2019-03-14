@@ -1,5 +1,5 @@
 --- Makefile.linux_openmp_64	2019-03-08 22:08:10.000000000 +0000
-+++ Makefile	2019-03-14 18:54:40.226801184 +0000
++++ Makefile	2019-03-14 20:49:36.783847110 +0000
 @@ -6,7 +6,7 @@
  USE_ZLIB = -DHAVE_ZLIB
  LZLIB    = -lz
@@ -46,3 +46,12 @@
  
  # The following line includes compiling for the SSE operations.
  # However, I found that it actually makes things worse in some test code.
+@@ -84,7 +85,7 @@
+ 
+ LINT = /usr/bin/lint -a -b -u -v -x $(IFLAGS) $(CCDEFS)
+ 
+-INSTALLDIR = ./linux_openmp_64
++INSTALLDIR = ../build
+ LIBDIR = $(INSTALLDIR)
+ 
+ #INSTALL_PREREQ = suma

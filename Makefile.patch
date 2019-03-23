@@ -18,15 +18,6 @@
  ifdef USE_LOCAL_X_TREE
      XROOT = /usr/local/afniX
      XROOT_I = -I$(XROOT)/include
-@@ -26,7 +26,7 @@
- endif
- 
- # uncomment USE_LESSTIF to use lesstif instead of openmotif
--# USE_LESSTIF = 1
-+USE_LESSTIF = 1
- ifdef USE_LESSTIF
-     LESSTIF_DEFS = -DUSING_LESSTIF
- 
 @@ -37,7 +37,7 @@
  endif
  
@@ -51,7 +42,7 @@
  LINT = /usr/bin/lint -a -b -u -v -x $(IFLAGS) $(CCDEFS)
  
 -INSTALLDIR = ./linux_openmp_64
-+INSTALLDIR = ../build
++INSTALLDIR = ../../build
  LIBDIR = $(INSTALLDIR)
  
  #INSTALL_PREREQ = suma
